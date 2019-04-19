@@ -1,0 +1,37 @@
+[user]
+	name = Rafael Bicalho
+    email = rbmbika@gmail.com
+	# Run "git config user.email <new-email>" inside a project to override the email config
+
+[core]
+    editor = vim
+    pager = less -r
+
+[push]
+    default = simple
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[pretty]
+    graph = %C(green)%h %C(auto)%d %C(reset)%s %C(blue)%an%C(reset)
+
+[alias]
+    s = status --branch
+    b = branch --verbose
+    d = diff
+    m = merge
+    c = commit
+    f = fetch -p
+    am = commit --amend
+    co = checkout
+    rb = rebase
+    ch = cherry-pick
+
+    l = log --graph --pretty=graph -5
+    lf = log --graph --pretty=graph --all
+    la = log --graph --pretty=graph --all -5
+
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t -> \\2/'

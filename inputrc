@@ -1,0 +1,8 @@
+# Case insensitive autocompletion
+set completion-ignore-case On
+
+# Show all autocomplete results at once
+set page-completions Off
+
+# List completion matches immediately
+set show-all-if-ambiguous On

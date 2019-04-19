@@ -1,0 +1,15 @@
+{
+    "editor.fontFamily": "Monaco, 'Courier New', monospace",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "javascript.suggestionActions.enabled": false,
+    "editor.autoIndent": false,
+    "breadcrumbs.enabled": true,
+    "files.insertFinalNewline": true,
+    "terminal.integrated.lineHeight": 1.2,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "Dracula"
+}
