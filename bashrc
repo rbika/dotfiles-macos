@@ -35,8 +35,8 @@ alias grep="grep -n --color=auto"
 alias nr='npm run'
 alias ns='npm start'
 alias ni='npm install'
-
 alias gitg='fork'
+alias dcompose='docker-compose'
 
 # Functions
 # ---------
