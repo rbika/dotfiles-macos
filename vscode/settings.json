@@ -11,6 +11,5 @@
     "terminal.integrated.lineHeight": 1.2,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.colorTheme": "Dracula",
-    "files.trimTrailingWhitespace": true,
     "editor.minimap.renderCharacters": false
 }
