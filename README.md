@@ -10,7 +10,7 @@ Download and install the following apps:
 
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) - Needed for command line tools to work properly
 - [Alfred](https://www.alfredapp.com) - macOS's spotlight replacement
-- [Google Chrome](https://www.google.com/chrome) - Main browser 
+- [Google Chrome](https://www.google.com/chrome) - Main browser
 - [Magnet](http://magnet.crowdcafe.com) - Window manager
 - [Spotify](https://www.spotify.com/br/download/other) - Music streaming
 - [iTerm2](https://www.iterm2.com) - macOS's terminal replacement
@@ -25,14 +25,11 @@ Download and install the following apps:
 
 ### VS Code Plugins
 
-- [Code Spell Check](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
 - [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Git Blame](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-- [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 
 
 Command Line Tools
@@ -44,7 +41,7 @@ Command Line Tools
 Dotfiles
 --------
 
-The `dotfiles` directory contains my configurations files for bash, git, vim, etc. Follow the steps below to get everything working. 
+The `dotfiles` directory contains my configurations files for bash, git, vim, etc. Follow the steps below to get everything working.
 
 - Clone this repo:
     ```
