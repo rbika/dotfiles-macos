@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/zsh
 
 read -p "Symlinks for the following files will be created:
-bashrc, bash_profile, gitconfig, inputrc, sqliterc and vimrc.
+zshrc, gitconfig, inputrc, sqliterc and vimrc.
 
 Existing files will be moved to \"$(pwd)/.backup\". Continue? (y/n) " -n 1;
 echo "";
@@ -25,15 +25,13 @@ if [[ $REPLY == [Yy] ]]; then
   fi
 
   # Create symlinks
-  create_symlink bashrc
-  create_symlink bash_profile
+  create_symlink zshrc
   create_symlink gitconfig
   create_symlink inputrc
   create_symlink sqliterc
   create_symlink vimrc
 
-  # Download git scripts
-  curl -fsSo ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+  # Download git-prompt script
   curl -fsSo ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 
   echo "Done =)"
