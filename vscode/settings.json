@@ -10,6 +10,5 @@
     "files.insertFinalNewline": true,
     "terminal.integrated.lineHeight": 1.2,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "Dracula",
     "editor.minimap.renderCharacters": false
 }
