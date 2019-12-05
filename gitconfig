@@ -1,5 +1,5 @@
 [user]
-	name = Rafael Bicalho
+    name = Rafael Bicalho
     email = rbmbika@gmail.com
 	# Run "git config user.email <new-email>" inside a project to override the email config
 
@@ -22,6 +22,7 @@
     s = status --branch
     b = branch --verbose
     d = diff
+    p = pull
     m = merge
     c = commit
     f = fetch -p
