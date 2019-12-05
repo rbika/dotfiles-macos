@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 read -p "Symlinks for the following files will be created:
 zshrc, gitconfig, inputrc, sqliterc and vimrc.
