@@ -4,7 +4,8 @@
 source ~/.git-prompt.sh
 
 # Reference: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
-setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{blue}$(__git_ps1 " | %s")%f \$ '
+# setopt PROMPT_SUBST; PS1='%K{blue}%F{black}%~%f%k%K{yellow}%F{blue}▶︎%f%F{black}$(__git_ps1 " %s")%k%f%F{yellow}▶︎%f '
+setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{black}%B$(__git_ps1 " | %s")%b%f \$ '
 
 # Antigen
 # -------
@@ -15,15 +16,6 @@ setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{blue}$(__git_ps1 " | %s")%f \$ '
 
 # Completion
 # ----------
-
-# Case-insensitive (all), partial-word, and then substring completion
-if zstyle -t ':prezto:module:completion:*' case-sensitive; then
-  zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-  setopt CASE_GLOB
-else
-  zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-  unsetopt CASE_GLOB
-fi
 
 # History config
 # --------------
