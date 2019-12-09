@@ -9,9 +9,7 @@ antigen apply
 # ------
 
 source ~/.git-prompt.sh
-
-# setopt PROMPT_SUBST; PS1='%K{blue}%F{black}%~%f%k%K{yellow}%F{blue}▶︎%f%F{black}$(__git_ps1 " %s")%k%f%F{yellow}▶︎%f '
-setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{black}%B$(__git_ps1 "  %s")%b%f \$ '
+setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{black}$(__git_ps1 "  %s")%f '
 
 # Completion
 # ----------
