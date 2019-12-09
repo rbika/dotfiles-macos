@@ -10,7 +10,6 @@ antigen apply
 
 source ~/.git-prompt.sh
 
-# Reference: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 # setopt PROMPT_SUBST; PS1='%K{blue}%F{black}%~%f%k%K{yellow}%F{blue}▶︎%f%F{black}$(__git_ps1 " %s")%k%f%F{yellow}▶︎%f '
 setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{black}%B$(__git_ps1 "  %s")%b%f \$ '
 
@@ -30,16 +29,16 @@ zstyle ':completion:*' list-colors ''
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 
 
-# History config
-# --------------
+# History
+# -------
 
 HISTFILE=~/.zsh_history
-HISTSIZE=5000 # Lines of history to keep in memory
-SAVEHIST=5000 # Entries to save to disk
-HISTDUP=erase # Erase duplicates in the history file
-setopt appendhistory # Append history to the history file (no overwriting)
-setopt sharehistory # Share history across terminals
-setopt incappendhistory # Immediately append to the history file
+HISTSIZE=5000
+SAVEHIST=5000
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
 
 # NVM
 # ---
@@ -69,3 +68,6 @@ alias dockerc='docker-compose'
 # ---------
 
 function _mkcd() { mkdir $1; cd $1; }
+
+# References
+#   http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
