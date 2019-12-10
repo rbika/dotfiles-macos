@@ -37,6 +37,7 @@ Command Line Tools
 
 - [Homebrew](https://brew.sh/) - Package manager for macOS
 - [nvm](https://github.com/creationix/nvm#installation-and-update) - Node Version Manager
+- [Antigen](https://github.com/zsh-users/antigen) - zsh plugin manager
 
 Dotfiles
 --------

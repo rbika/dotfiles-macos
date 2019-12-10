@@ -1,7 +1,7 @@
 # Antigen
 # -------
 
-source ~/.antigen.zsh
+source /usr/local/share/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-completions
 antigen apply
 
@@ -9,7 +9,7 @@ antigen apply
 # ------
 
 source ~/.git-prompt.sh
-setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{black}$(__git_ps1 "  %s")%f '
+setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{black}$(__git_ps1 " | %s")%f '
 
 # Completion
 # ----------
