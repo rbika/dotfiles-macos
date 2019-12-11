@@ -32,12 +32,13 @@ Download and install the following apps:
 - [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 
 
-Command Line Tools
-------------------
+Extra Tools
+-----------
 
 - [Homebrew](https://brew.sh/) - Package manager for macOS
 - [nvm](https://github.com/creationix/nvm#installation-and-update) - Node Version Manager
 - [Antigen](https://github.com/zsh-users/antigen) - zsh plugin manager
+- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 
 Dotfiles
 --------
