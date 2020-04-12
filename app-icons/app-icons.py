@@ -15,8 +15,11 @@ Example::
 
 '''
 
-import os
+from time import time
+from os import path, system
 
+
+BACKUP_DIR = './.backup'
 
 ICONS_LIST = [
     {
@@ -51,6 +54,21 @@ ICONS_LIST = [
     }
 ]
 
+def backup_icon(icon_path, backup_file):
+    '''Create a backup of the original icon file.
+
+    Args:
+        icon_path (str): original icon path
+        backup_file (str): backup's file name
+    '''
+    backup_path = path.join(BACKUP_DIR, backup_file)
+
+    if not path.isdir(BACKUP_DIR):
+        system('mkdir "{}"'.format(BACKUP_DIR))
+
+    if not path.isfile(backup_path):
+        system('cp "{}" "{}"'.format(icon_path, backup_path))
+
 
 def update_icon(app_path, icon_file, custom_icon_file):
     '''Copy custom icon file to the corresponding app folder.
@@ -64,15 +82,17 @@ def update_icon(app_path, icon_file, custom_icon_file):
     icon_path = '{}/Contents/Resources/{}'.format(app_path, icon_file)
     custom_icon_path = './{}'.format(custom_icon_file)
 
-    if os.path.isfile(icon_path):
-        os.system('cp "{}" "{}"'.format(custom_icon_path, icon_path))
-        os.system('touch "{}"'.format(app_path))
+    if path.isfile(icon_path):
+        backup_icon(icon_path, custom_icon_file)
+        system('cp "{}" "{}"'.format(custom_icon_path, icon_path))
+        system('touch "{}"'.format(app_path))
 
 
 def main():
     for obj in ICONS_LIST:
         print('Updating {} icon'.format(obj['app_name']))
         update_icon(obj['app_path'], obj['icon_file'], obj['custom_icon_file'])
+
 
 if __name__ == "__main__":
     main()
