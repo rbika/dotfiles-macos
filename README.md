@@ -34,7 +34,7 @@ VS Code Plugins
 - [Git Blame](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Python])(https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 Tools
 -----
@@ -72,6 +72,19 @@ The `dotfiles` directory contains my configurations files for bash, git, vim, et
 - Run VS Code script
     ```
     ./vscode.sh
+    ```
+
+Custom App Icons
+----------------
+
+- Change directory
+    ```
+    cd ~/.dotfiles/app-icons
+    ```
+
+- Run dotfiles script
+    ```
+    ./app-iconts.py
     ```
 
 Extra
