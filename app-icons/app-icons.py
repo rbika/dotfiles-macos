@@ -15,8 +15,8 @@ Example::
 
 '''
 
-from time import time
 from os import path, system
+from time import time
 
 
 BACKUP_DIR = './.backup'
@@ -63,6 +63,7 @@ def backup_icon(icon_path, backup_file):
     '''
     backup_path = path.join(BACKUP_DIR, backup_file)
 
+    # Create backup folder if necessary
     if not path.isdir(BACKUP_DIR):
         system('mkdir "{}"'.format(BACKUP_DIR))
 
