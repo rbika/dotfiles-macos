@@ -1,6 +1,6 @@
 [user]
-    name = Rafael Bicalho
-    email = rbicalho@avenuecode.com
+	name = Rafael Bicalho
+	email = rbmbika@gmail.com
 	# Run "git config user.email <new-email>" inside a project to override the email config
 
 [core]
@@ -36,3 +36,10 @@
     la = log --graph --pretty=graph --all -5
 
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t -> \\2/'
+
+# Github Desktop app automatic config 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
