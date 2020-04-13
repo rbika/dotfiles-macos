@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 '''This script replaces app icons by custom ones.
 
-The script assumes the icons are in the same directory of this file. Icon files 
-should have the ".icns" extension. 
+The script assumes the icons are in the same directory of this file. Icon files
+should have the ".icns" extension.
 
-If need to convert a png image you can use the png2icns package 
+If need to convert a png image you can use the png2icns package
 (https://www.npmjs.com/package/png2icns). It expects a 1024x1024 png image
 as input.
 
@@ -93,6 +93,8 @@ def main():
     for obj in ICONS_LIST:
         print('Updating {} icon'.format(obj['app_name']))
         update_icon(obj['app_path'], obj['icon_file'], obj['custom_icon_file'])
+
+    system('killAll Finder && killAll Dock')
 
 
 if __name__ == "__main__":
