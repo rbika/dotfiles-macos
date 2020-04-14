@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 '''Creates symlinks for home's config files.
 
 Existing files will be moved to a ".backup" folder in the same directory of
@@ -30,7 +31,7 @@ def backup_file(file):
 
     now = int(time())
     src_path = Path(HOME_DIR, file)
-    dest_path = Path(HOME_DIR, f'{file}_{now}')
+    dest_path = Path(CURRENT_DIR, '.backup', f'{file}_{now}')
 
     # Create backup folder if necessary
     if not Path.is_dir(Path(CURRENT_DIR, '.backup')):

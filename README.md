@@ -47,7 +47,7 @@ Tools
 Dotfiles
 --------
 
-The `dotfiles` directory contains my configurations files for bash, git, vim, etc. Follow the steps below to get everything working.
+The `dotfiles` directory contains my configurations files for zsh, git, vim, etc. Follow the steps below to get everything working.
 
 - Clone this repo:
     ```
@@ -61,7 +61,7 @@ The `dotfiles` directory contains my configurations files for bash, git, vim, et
 
 - Run dotfiles script
     ```
-    ./dotfiles.sh
+    ./dotfiles.py
     ```
 
 - Change directory
