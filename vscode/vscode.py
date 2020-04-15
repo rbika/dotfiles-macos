@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'''Creates symlinks for home's config files.
+'''Creates symbolic links for VSCode's config files.
 
 Existing files will be moved to a ".backup" folder in the same directory of
-this script. Symlinks for the following files will be created:
+this script. Symbolic links for the following files will be created:
 
-    - .zshrc
-    - .gitconfig
-    - .vimrc
+    - .settings.json
+    - .keybindings.json
 
 '''
 
@@ -18,8 +17,8 @@ from pathlib import Path
 
 
 HOME_DIR = str(Path.home())
+VSCODE_DIR = str(Path(HOME_DIR, 'Library/Application Support/Code/User/'))
 CURRENT_DIR = str(Path.cwd())
-GIT_PROMPT_URL = 'https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh'
 
 
 def backup_file(file):
@@ -30,7 +29,7 @@ def backup_file(file):
     '''
 
     now = int(time())
-    src_path = Path(HOME_DIR, file)
+    src_path = Path(VSCODE_DIR, file)
     dest_path = Path(CURRENT_DIR, '.backup', f'{file}_{now}')
 
     # Create backup folder if necessary
@@ -38,7 +37,7 @@ def backup_file(file):
         system('mkdir .backup')
 
     system(f'mv {src_path} {dest_path}')
-
+    
 
 def create_symlink(file):
     '''Create a symbolic link for the config file.
@@ -48,23 +47,20 @@ def create_symlink(file):
     '''
 
     src_path = Path(CURRENT_DIR, file)
-    dest_path = Path(HOME_DIR, file)
+    dest_path = Path(VSCODE_DIR, file)
 
     if Path.is_file(dest_path) and not Path.is_symlink(dest_path):
         backup_file(file)
 
+    print(dest_path, Path.is_symlink(dest_path))
     if not Path.is_symlink(dest_path):
         system(f'ln -s {src_path} {dest_path}')
 
 
 def main():
-    # Creates symlinks
-    create_symlink('.zshrc')
-    create_symlink('.gitconfig')
-    create_symlink('.vimrc')
-
-    # Downloads git-prompt script
-    system(f'curl -fsSo ~/.git-prompt.sh {GIT_PROMPT_URL}')
+    # Create symlinks
+    create_symlink('settings.json')
+    create_symlink('keybindings.json')
 
 
 if __name__ == "__main__":
