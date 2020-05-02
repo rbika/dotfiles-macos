@@ -87,6 +87,11 @@ Custom App Icons
     ./app-iconts.py
     ```
 
+- Create symlink for the launchd plist file
+    ```
+    ln -s ~/.dotfiles/app-icons/local.app-icons.plist ~/Library/LaunchAgents 
+    ```
+
 Extra
 -----
 
