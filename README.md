@@ -10,12 +10,12 @@ Download and install the following apps:
 
 - [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) - Needed for command line tools to work properly
 - [Google Chrome](https://www.google.com/chrome) - Main browser
-- [Magnet](http://magnet.crowdcafe.com) - Window manager
+- [Rectangle](https://rectangleapp.com/) - Window manager
 - [Spotify](https://www.spotify.com/br/download/other) - Music streaming
 - [iTerm2](https://www.iterm2.com) - macOS's terminal replacement
 - [VS Code](https://code.visualstudio.com) - Main text editor
-- [Docker](https://www.docker.com/products/docker-desktop) - Docker for macOS
 - [Github Desktop](https://desktop.github.com/) - Git client
+- [Figma](https://www.figma.com/) - Design tool
 
 Google Chrome Extensions
 ------------------------
@@ -26,9 +26,7 @@ Google Chrome Extensions
 VS Code Plugins
 ---------------
 
-- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
-- [Dracula](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
 - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Git Blame](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -44,10 +42,8 @@ Tools
 - [Antigen](https://github.com/zsh-users/antigen) - zsh plugin manager
 - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 
-Dotfiles
---------
-
-The `dotfiles` directory contains my configurations files for zsh, git, vim, etc. Follow the steps below to get everything working.
+Config files and scripts
+------------------------
 
 - Clone this repo:
     ```
@@ -59,19 +55,19 @@ The `dotfiles` directory contains my configurations files for zsh, git, vim, etc
     cd ~/.dotfiles
     ```
 
-- Run dotfiles script
+- Download git-prompt script:
     ```
-    ./dotfiles.py
-    ```
-
-- Change directory
-    ```
-    cd vscode
+    curl -fsSo ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
     ```
 
-- Run VS Code script
+- Create symlinks:
     ```
-    ./vscode.sh
+    ln -s .zshrc ~/.zshrc
+    ln -s .gitconfig ~/.gitconfig
+    ln -s .vimrc ~/.vimrc
+    ln -s settings.json ~/Library/Application Support/Code/User/settings.json
+    ln -s keybindings.json ~/Library/Application Support/Code/User/keybindings.json
+
     ```
 
 Custom App Icons
