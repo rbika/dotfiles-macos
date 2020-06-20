@@ -1,7 +1,7 @@
 [user]
-	name = Rafael Bicalho
-	email = rbmbika@gmail.com
-	# Run "git config user.email <new-email>" inside a project to override the email config
+    name = Rafael Bicalho
+    email = rbmbika@gmail.com
+    # Run "git config user.email <new-email>" inside a project to override the email config
 
 [core]
     editor = vim
