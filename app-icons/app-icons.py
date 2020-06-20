@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 '''This script replaces app icons by custom ones.
 
 The script assumes the icons are in the same directory of this file. Icon files
 should have the ".icns" extension.
 
-If need to convert a png image you can use the png2icns package
+If you need to convert a PNG image you can use the png2icns package
 (https://www.npmjs.com/package/png2icns). It expects a 1024x1024 png image
 as input.
 
@@ -21,6 +22,11 @@ from time import time
 
 BACKUP_DIR = './.backup'
 
+# Each array item should be a dictionary with the following keys:
+# app_name: App name (used only for logging)
+# app_path: App path with ".app" extension
+# icon_file: Name of the icon file inside app's resource folder
+# custom_icon_file: Name of the custom icon file
 ICONS_LIST = [
     {
         'app_name': 'Battle Net',
@@ -51,6 +57,12 @@ ICONS_LIST = [
         'app_path': '/Applications/Github Desktop.app',
         'icon_file': 'electron.icns',
         'custom_icon_file': 'github-desktop.icns'
+    },
+    {
+        'app_name': 'Notion',
+        'app_path': '/Applications/Notion.app',
+        'icon_file': 'Notion.icns',
+        'custom_icon_file': 'notion.icns'
     }
 ]
 
