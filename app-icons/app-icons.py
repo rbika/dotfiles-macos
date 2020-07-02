@@ -63,6 +63,12 @@ ICONS_LIST = [
         'app_path': '/Applications/Notion.app',
         'icon_file': 'Notion.icns',
         'custom_icon_file': 'notion.icns'
+    },
+    {
+        'app_name': 'xScope',
+        'app_path': '/Applications/xScope.app',
+        'icon_file': 'xScope_appIcon.icns',
+        'custom_icon_file': 'xscope.icns'
     }
 ]
 
