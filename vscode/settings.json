@@ -13,6 +13,7 @@
 
   // Integrated Terminal
   "terminal.integrated.fontFamily": "Monaco, Hack Nerd Font",
+  "terminal.integrated.lineHeight": 1.2,
 
   // Plugins Settings
   "material-icon-theme.folders.theme": "classic"
