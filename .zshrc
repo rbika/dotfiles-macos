@@ -53,9 +53,7 @@ alias lla="ls -lA"
 alias ..="cd .."
 alias cp="cp -i"
 alias mv="mv -i"
-alias op="open"
 alias mk="mkdir -p"
-alias mkcd="_mkcd"
 alias path="echo -e $PATH | tr ':' '\n'"
 alias grep="grep -n --color=auto"
 alias gitg='github'
@@ -64,7 +62,19 @@ alias dockerc='docker-compose'
 # Functions
 # ---------
 
-function _mkcd() { mkdir $1; cd $1; }
+# Creates a new directory and enters it
+function mkcd() { 
+    mkdir $1; cd $1; 
+}
+
+# Opens a given directory or current one if no args are passed
+function op() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open $1;
+	fi;
+}
 
 # References
 #   http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
