@@ -9,7 +9,7 @@ antigen apply
 # ------
 
 source ~/.git-prompt.sh
-setopt PROMPT_SUBST; PS1='%F{cyan}%~%f%F{blue}$(__git_ps1 " \uE0A0 %s")%f '
+setopt PROMPT_SUBST; PS1='%F{blue}%~%f%F{cyan}$(__git_ps1 " \uE0A0 %s")%f '
 
 # Completion
 # ----------
@@ -56,8 +56,7 @@ alias mv="mv -i"
 alias mk="mkdir -p"
 alias path="echo -e $PATH | tr ':' '\n'"
 alias grep="grep -n --color=auto"
-alias gitg='github'
-alias dockerc='docker-compose'
+alias gitg='fork'
 
 # Functions
 # ---------
@@ -69,12 +68,19 @@ function mkcd() {
 
 # Opens a given directory or current one if no args are passed
 function op() {
-	if [ $# -eq 0 ]; then
-		open .;
-	else
-		open $1;
-	fi;
+    if [ $# -eq 0 ]; then
+        open .;
+    else
+        open $1;
+fi;
 }
 
+# Local config
+# ------------
+
+if [ -f ~/.dotfiles/.local-zshrc ]; then
+    source ~/.dotfiles/.local-zshrc
+fi
+
 # References
-#   http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
+#   Prompt: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
