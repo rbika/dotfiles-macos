@@ -29,47 +29,11 @@ BACKUP_DIR = './.backup'
 # custom_icon_file: Name of the custom icon file
 ICONS_LIST = [
     {
-        'app_name': 'Battle Net',
-        'app_path': '/Applications/Battle.net.app',
-        'icon_file': 'default.icns',
-        'custom_icon_file': 'battlenet.icns'
-    },
-    {
-        'app_name': 'Hearthstone',
-        'app_path': '/Applications/Hearthstone/Hearthstone.app',
-        'icon_file': 'PlayerIcon.icns',
-        'custom_icon_file': 'hearthstone.icns'
-    },
-    {
         'app_name': 'Docker',
         'app_path': '/Applications/Docker.app/Contents/MacOS/Docker Desktop.app',
         'icon_file': 'Docker Desktop.icns',
         'custom_icon_file': 'docker-desktop.icns'
     },
-    {
-        'app_name': 'MongoDB Compass',
-        'app_path': '/Applications/MongoDB Compass Community.app',
-        'icon_file': 'electron.icns',
-        'custom_icon_file': 'mongodb-compass.icns'
-    },
-    {
-        'app_name': 'Github Desktop',
-        'app_path': '/Applications/Github Desktop.app',
-        'icon_file': 'electron.icns',
-        'custom_icon_file': 'github-desktop.icns'
-    },
-    {
-        'app_name': 'Notion',
-        'app_path': '/Applications/Notion.app',
-        'icon_file': 'Notion.icns',
-        'custom_icon_file': 'notion.icns'
-    },
-    {
-        'app_name': 'xScope',
-        'app_path': '/Applications/xScope.app',
-        'icon_file': 'xScope_appIcon.icns',
-        'custom_icon_file': 'xscope.icns'
-    }
 ]
 
 def backup_icon(icon_path, backup_file):
