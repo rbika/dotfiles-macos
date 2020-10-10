@@ -1,21 +1,25 @@
 Development Environment Setup (macOS)
 =====================================
 
-Here are the steps I follow to get my development environment set up on a new mac
+Here are the steps I follow to set up a new mac
 
-Essential Apps
---------------
+Tools
+-----
 
-Download and install the following apps:
+- [Homebrew](https://brew.sh/) - Package manager for macOS
+- [nvm](https://github.com/creationix/nvm#installation-and-update) - Node Version Manager
+- [Antigen](https://github.com/zsh-users/antigen) - zsh plugin manager
 
-- [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) - Needed for command line tools to work properly
-- [Google Chrome](https://www.google.com/chrome) - Main browser
-- [Rectangle](https://rectangleapp.com/) - Window manager
-- [Spotify](https://www.spotify.com/br/download/other) - Music streaming
-- [iTerm2](https://www.iterm2.com) - macOS's terminal replacement
-- [VS Code](https://code.visualstudio.com) - Main text editor
-- [Github Desktop](https://desktop.github.com/) - Git client
-- [Figma](https://www.figma.com/) - Design tool
+Apps
+----
+
+Apps can be installed running:
+
+```
+brew bundle
+```
+
+See the `Brewbundle` file for the list of apps.
 
 Google Chrome Extensions
 ------------------------
@@ -33,21 +37,14 @@ VS Code Plugins
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-
-Tools
------
-
-- [Homebrew](https://brew.sh/) - Package manager for macOS
-- [nvm](https://github.com/creationix/nvm#installation-and-update) - Node Version Manager
-- [Antigen](https://github.com/zsh-users/antigen) - zsh plugin manager
-- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
+- [Brewfile](https://marketplace.visualstudio.com/items?itemName=sharat.vscode-brewfile)
 
 Config files and scripts
 ------------------------
 
 - Clone this repo:
     ```
-    git clone git@gitlab.com:rbika/dotfiles.git ~/.dotfiles
+    git clone git@github.com:rbika/dotfiles.git
     ```
 
 - Change directory
@@ -67,7 +64,6 @@ Config files and scripts
     ln -s .vimrc ~/.vimrc
     ln -s settings.json ~/Library/Application Support/Code/User/settings.json
     ln -s keybindings.json ~/Library/Application Support/Code/User/keybindings.json
-
     ```
 
 Custom App Icons
@@ -92,7 +88,6 @@ Extra
 -----
 
 - Remap Caps Lock to Control: Change this on System Preferences -> Keyboard -> Modifier Keys
-
 
 TODO
 ----
