@@ -1,7 +1,7 @@
 Development Environment Setup (macOS)
 =====================================
 
-Here are the steps I follow to set up a new mac
+Here are the steps I follow to set up a new mac (Big Sur updated).
 
 Tools
 -----
