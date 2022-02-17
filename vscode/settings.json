@@ -1,19 +1,26 @@
 {
   // Editor
-  "editor.fontFamily": "Monaco, 'Courier New', monospace",
   "editor.minimap.renderCharacters": false,
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.detectIndentation": true,
+  "editor.rulers": [100],
+  "editor.snippetSuggestions": "top",
+  "editor.wordBasedSuggestions": false,
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
 
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
 
   // Integrated Terminal
-  "terminal.integrated.fontFamily": "Monaco, Hack Nerd Font",
-  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontFamily": "Menlo, Monaco, Hack Nerd Font",
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.fontWeightBold": "normal",
+
+  // Diff Editor
+  "diffEditor.renderSideBySide": false,
+
+  // Explorer
+  "explorer.compactFolders": false,
 
   // Plugins Settings
   "material-icon-theme.folders.theme": "classic"
