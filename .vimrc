@@ -24,7 +24,7 @@ filetype on " Type of file; triggers the FileType event
 syntax on " Enable syntax highlighting
 set hlsearch " Highlight matches for the last used search pattern
 set background=dark " Background color brightness
-colorscheme slate " Default colorscheme
+colorscheme codedark " Default colorscheme
 
 " Messages and info
 " -----------------
