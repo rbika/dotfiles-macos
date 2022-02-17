@@ -6,8 +6,8 @@
 
 source ~/.git-prompt.sh
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%~%f%F{cyan}$(__git_ps1 " (%s)")%f '
-RPROMPT='%F{black}%*%f'
+PROMPT='%F{blue}%~%f%F{black}$(__git_ps1 " (%s)")%f '
+RPROMPT='%F{black}%B%*%b%f'
 
 # -----------------------------------------------
 # Completion
@@ -24,16 +24,16 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 # -----------------------------------------------
 
 # history size within one session
-HISTSIZE=1000 
+HISTSIZE=1000
 
 # history size of HISTFILE
-SAVEHIST=1000 
+SAVEHIST=1000
 
 # history file
-HISTFILE=~/.zsh_history 
+HISTFILE=~/.zsh_history
 
 # appends history instead of overwrite it
-setopt APPEND_HISTORY 
+setopt APPEND_HISTORY
 
 # appends commands as they are entered
 setopt INC_APPEND_HISTORY
@@ -87,8 +87,8 @@ export LESS=-R
 # -----------------------------------------------
 
 # Creates a new directory and enters it
-function mkcd() { 
-  mkdir $1; cd $1; 
+function mkcd() {
+  mkdir $1; cd $1;
 }
 
 # Opens a given directory or current one if no args are provided
