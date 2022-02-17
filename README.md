@@ -68,6 +68,13 @@ See the `Brewbundle` file for the list of apps.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
 
+## Extra configs
+
+- Disable font smoothing:
+  ```
+  defaults -currentHost write -g AppleFontSmoothing -int 0
+  ```
+
 ## TODO
 
 - Add iTerm2 config file
