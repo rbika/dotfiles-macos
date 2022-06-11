@@ -68,6 +68,28 @@ See the `Brewbundle` file for the list of apps.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
 
+## System preferences
+
+### Mission Control
+
+- Hot Corners
+  - Top Right: Mission Control
+  - Bottom Right: Desktop
+
+### Sounds
+
+- Set alert sound to "Bubble"
+
+### Keyboard
+
+- Set key repeat to "Fast"
+- Set delay until repeat to "Short"
+- In Modifier Keys set Caps Lock to Control
+- Shortcuts → Mission Control
+  - Show Desktop: Option+D
+  - Move left a space: Option+1
+  - Move right a space: Option+2
+
 ## Extra configs
 
 - Disable font smoothing:
