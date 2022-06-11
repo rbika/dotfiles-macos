@@ -1,22 +1,19 @@
 # brew tap
 # --------
 
-tap "homebrew/cask-fonts"
+# tap "homebrew/cask-fonts"
 
 # brew install --cask
 # -------------------
 
+cask "appcleaner"
 cask "google-chrome"
 cask "iterm2"
 cask "visual-studio-code"
 cask "fork"
-cask "spotify"
 cask "telegram-desktop"
 cask "whatsapp"
-cask "discord"
-# cask "rectangle"
+cask "rectangle"
 cask "figma"
 cask "iina"
-# cask "appcleaner"
-# cask "the-unarchiver"
-cask "font-hack-nerd-font"
+# cask "font-hack-nerd-font"
