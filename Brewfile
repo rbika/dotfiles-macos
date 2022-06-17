@@ -1,19 +1,22 @@
-# brew tap
-# --------
-
-# tap "homebrew/cask-fonts"
-
 # brew install --cask
 # -------------------
 
-cask "appcleaner"
+# Browsers
 cask "google-chrome"
+cask "brave-browser"
+
+# Dev
 cask "iterm2"
 cask "visual-studio-code"
 cask "fork"
+
+# Chat
 cask "telegram-desktop"
 cask "whatsapp"
+
+# Utilities
+cask "appcleaner"
 cask "rectangle"
-cask "figma"
 cask "iina"
-# cask "font-hack-nerd-font"
+cask "notion"
+cask "figma"
