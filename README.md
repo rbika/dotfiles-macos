@@ -74,7 +74,8 @@ See the `Brewbundle` file for the list of apps.
 
 - Hot Corners
   - Top Right: Mission Control
-  - Bottom Right: Desktop
+  - Bottom Right: Application Window
+  - Bottom Left: Desktop
 
 ### Sounds
 
