@@ -3,6 +3,9 @@
 	email = rbmbika@gmail.com
     # Run "git config user.email <new-email>" inside a project to override the email config
 
+[init]
+	defaultBranch = main
+
 [core]
     editor = vim
     pager = less -FX
