@@ -21,7 +21,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 ## Terminal tools
 
 - [Homebrew](https://brew.sh/) - Package manager for macOS
-- [CocoaPods](https://cocoapods.org/) - Dependency manager for Swift 
 - [nvm](https://github.com/creationix/nvm#installation-and-update) - Node Version Manager
 
 - Download git-prompt script:
