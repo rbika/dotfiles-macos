@@ -1,10 +1,10 @@
 [user]
-	name = Rafael Bicalho
-	email = rbmbika@gmail.com
+    name = Rafael Bicalho
+    email = rbmbika@gmail.com
     # Run "git config user.email <new-email>" inside a project to override the email config
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [core]
     editor = vim
@@ -19,7 +19,7 @@
     branch = auto
 
 [pretty]
-    graph = %C(green)%h %C(auto)%d %C(reset)%s %C(blue)%an%C(reset)
+    pretty-format = %C(green)%h %C(auto)%d %C(reset)%s %C(blue)%an%C(reset)
 
 [alias]
     s = status --branch
@@ -35,6 +35,7 @@
     uncommit = reset HEAD^
     unstage = reset HEAD
 
-    l = log --graph --pretty=graph --decorate-refs-exclude="tags/*" -5
-    lf = log --graph --pretty=graph --all
-    la = log --graph --pretty=graph --all -5
+    l = log --pretty=pretty-format --decorate-refs-exclude="tags/*" -5
+    lg = log --graph --pretty=pretty-format --decorate-refs-exclude="tags/*" -5
+    lf = log --graph --pretty=pretty-format --all
+    la = log --graph --pretty=pretty-format --all -5
