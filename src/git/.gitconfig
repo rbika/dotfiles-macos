@@ -39,3 +39,4 @@
     lg = log --graph --pretty=pretty-format --decorate-refs-exclude="tags/*" -5
     lf = log --graph --pretty=pretty-format --all
     la = log --graph --pretty=pretty-format --all -5
+    ld = log --oneline --no-merges # git ld target-branch..source-branch
