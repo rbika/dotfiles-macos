@@ -28,8 +28,17 @@
   // Explorer
   "explorer.compactFolders": false,
 
-  // Plugins Settings
-  "material-icon-theme.folders.theme": "classic"
+  // Material Icon (Plugin)
+  "material-icon-theme.folders.theme": "classic",
+  
+  // GitLens (Plugin)
+  "gitlens.hovers.avatarSize": 24,
+  "gitlens.views.commits.avatars": false,
+  "gitlens.graph.showDetailsView": false,
+  "gitlens.graph.showGhostRefsOnRowHover": false,
+  "gitlens.graph.dimMergeCommits": true,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false
 
   // ---
 }
