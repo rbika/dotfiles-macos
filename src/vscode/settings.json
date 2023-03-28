@@ -1,7 +1,7 @@
 {
   // Window
   "window.autoDetectColorScheme": true,
-  
+
   // Editor
   "editor.minimap.renderCharacters": false,
   "editor.detectIndentation": true,
@@ -13,7 +13,9 @@
 
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Default Dark+ Experimental",
+  "workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
+  "workbench.preferredLightColorTheme": "Default Light+ Experimental",
 
   // Integrated Terminal
   "terminal.integrated.fontFamily": "Menlo, Monaco, Hack Nerd Font",
@@ -27,5 +29,7 @@
   "explorer.compactFolders": false,
 
   // Plugins Settings
-  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.folders.theme": "classic"
+
+  // ---
 }
