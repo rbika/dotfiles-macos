@@ -67,6 +67,7 @@ alias mk="mkdir -p"
 alias path="echo -e $PATH | tr ':' '\n'"
 alias grep="grep -n --color=auto"
 alias gitg='fork'
+alias vim='nvim'
 
 # -----------------------------------------------
 # LESS

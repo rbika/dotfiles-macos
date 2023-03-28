@@ -1,7 +1,7 @@
 # Development Environment Setup (macOS)
 
 Steps to set up a new macOS machine  
-Updated for macOS Monterey
+Updated for macOS Ventura
 
 ## SSH key
 
@@ -47,8 +47,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
   ```
   ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
   ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
-  ln -s $(pwd)/src/vim/.vimrc ~/.vimrc
-  ln -s $(pwd)/src/vim/.vim ~/.vim
+  ln -s $(pwd)/src/nvim ~/.config
   ```
 
 ## System preferences
