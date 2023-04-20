@@ -7,7 +7,7 @@
 source ~/.git-prompt.sh
 setopt PROMPT_SUBST
 PROMPT='%F{blue}%~%f%F{black}$(__git_ps1 " (%s)")%f '
-RPROMPT='%F{black}%B%*%b%f'
+RPROMPT='%F{black}%*%f'
 
 # -----------------------------------------------
 # Completion
@@ -17,7 +17,10 @@ RPROMPT='%F{black}%B%*%b%f'
 autoload -Uz compinit && compinit
 
 # Case insensitive and fuzzy tab completion
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list '' \
+  'm:{a-z\-}={A-Z\_}' \
+  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+  'r:|?=** m:{a-z\-}={A-Z\_}'
 
 # -----------------------------------------------
 # History
