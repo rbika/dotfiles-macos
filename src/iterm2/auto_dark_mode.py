@@ -10,7 +10,7 @@ async def update(connection, theme):
     # Themes have space-delimited attributes, one of which will be light or dark.
     parts = theme.split(" ")
     if "dark" in parts:
-        preset = await iterm2.ColorPreset.async_get(connection, "VSCode Dark+")
+        preset = await iterm2.ColorPreset.async_get(connection, "Nord Dark")
     else:
         preset = await iterm2.ColorPreset.async_get(connection, "Light Background")
 

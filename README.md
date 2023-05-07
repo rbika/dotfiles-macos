@@ -105,6 +105,7 @@ Custom app icons can be found inside `/src/app-icons`.
 
 ### iTerm2
 
+- Download and install the [Nord Dark](https://github.com/rbika/iterm2-nord-dark) iTerm2 theme.
 - Copy the `auto_dark_mode.py` script the iTerm's folder:
 
   ```
