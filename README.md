@@ -109,5 +109,5 @@ Custom app icons can be found inside `/src/app-icons`.
 - Copy the `auto_dark_mode.py` script the iTerm's folder:
 
   ```
-  cp -p ./src/iterm2/auto_dark_mode.py Library/Application\ Support/iTerm2/Scripts/AutoLaunch
+  cp -p ./src/iterm2/auto_dark_mode.py ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch
   ```
