@@ -19,7 +19,8 @@
     branch = auto
 
 [pretty]
-    pretty-format = %C(green)%h %C(auto)%d %C(reset)%s %C(blue)%an%C(reset)
+    pretty-format-1 = %C(green)%h %C(auto)%d %C(reset)%s %C(reset)
+    pretty-format-2 = %C(green)%h %C(auto)%d %C(reset)%s %C(blue)%an %C(reset)
 
 [alias]
     s = status --branch
@@ -32,11 +33,11 @@
     co = checkout
     rb = rebase
     ch = cherry-pick
+    wip = commit --no-verify -m "WIP"
     uncommit = reset HEAD^
     unstage = reset HEAD
 
-    l = log --pretty=pretty-format --decorate-refs-exclude="tags/*" -5
-    lg = log --graph --pretty=pretty-format --decorate-refs-exclude="tags/*" -5
-    lf = log --graph --pretty=pretty-format --all
-    la = log --graph --pretty=pretty-format --all -5
+    l = log --pretty=pretty-format-1 --decorate-refs-exclude="tags/*" -5
+    lg = log --graph --pretty=pretty-format-2 --decorate-refs-exclude="tags/*" -5
+    lf = log --graph --pretty=pretty-format-2 --all
     ld = log --oneline --no-merges # git ld target-branch..source-branch
