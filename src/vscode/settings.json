@@ -24,6 +24,7 @@
   "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, Monaco, Hack Nerd Font",
   "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
 
   // Diff Editor
   "diffEditor.renderSideBySide": false,
