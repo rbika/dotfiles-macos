@@ -2,23 +2,26 @@
   // Window
   "window.autoDetectColorScheme": true,
 
+  // Workbench
+  "workbench.colorTheme": "Nord",
+  "workbench.preferredDarkColorTheme": "Nord",
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "workbench.iconTheme": "material-icon-theme",
+
   // Editor
   "editor.minimap.renderCharacters": false,
   "editor.detectIndentation": true,
-  "editor.rulers": [100],
+  "editor.rulers": [
+    100
+  ],
   "editor.snippetSuggestions": "top",
   "editor.wordBasedSuggestions": false,
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
-
-  // Workbench
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Default Dark+ Experimental",
-  "workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
-  "workbench.preferredLightColorTheme": "Default Light+ Experimental",
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
 
   // Integrated Terminal
-  "terminal.integrated.fontFamily": "Menlo, Monaco, Hack Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, Monaco, Hack Nerd Font",
   "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.fontWeightBold": "normal",
 
@@ -28,9 +31,12 @@
   // Explorer
   "explorer.compactFolders": false,
 
+  // JSON
+  "json.format.keepLines": true,
+
   // Material Icon (Plugin)
   "material-icon-theme.folders.theme": "classic",
-  
+
   // GitLens (Plugin)
   "gitlens.hovers.avatarSize": 24,
   "gitlens.views.commits.avatars": false,
@@ -38,7 +44,61 @@
   "gitlens.graph.showGhostRefsOnRowHover": false,
   "gitlens.graph.dimMergeCommits": true,
   "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.currentLine.enabled": false,
+
+  // cSpell (Plugin)
+  "cSpell.language": "en,pt,pt_BR",
+
+  // Nord Theme Customization
+  "workbench.colorCustomizations": {
+    "[Nord]": {
+      "editor.background": "#20222e",
+      "minimap.background": "#20222e",
+      "sideBar.background": "#181a21",
+      "list.activeSelectionBackground": "#272a35",
+      "list.activeSelectionForeground": "#88c0d0",
+      "list.activeSelectionIconForeground": "#88c0d0",
+      "panel.background": "#181a21",
+      "terminal.background": "#181a21",
+      "statusBar.background": "#181a21",
+      "tab.activeBackground": "#20222e",
+      "tab.inactiveBackground": "#181a21",
+      "tab.border": "#3b4252",
+      "tab.unfocusedActiveBorder": "#20222e",
+      "tab.unfocusedHoverBorder": "#20222e",
+      "tab.activeBorder": "#20222e",
+      "tab.hoverBorder": "#00000000", // TODO
+      "tab.hoverBackground": "#20222e",
+      "tab.activeBorderTop": "#88c0d0",
+      "editorGutter.background": "#20222e",
+      "commandCenter.background": "#20222e",
+      "titleBar.activeBackground": "#181a21",
+      "titleBar.inactiveBackground": "#181a21",
+      "editorHoverWidget.background": "#181a21",
+      "editor.wordHighlightBackground": "#32374b",
+      "sideBarSectionHeader.background": "#181a21",
+      "sideBarSectionHeader.border": "#3b4252",
+      "titleBar.border": "#3b4252",
+      "statusBar.border": "#3b4252",
+      "editorGroupHeader.tabsBackground": "#181a21",
+      "editorGroupHeader.tabsBorder": "#3b4252",
+      "activityBar.border": "#3b4252",
+      "activityBar.background": "#181a21",
+      "editor.lineHighlightBackground": "#2b2f40",
+      "editor.lineHighlightBorder": "#20222e",
+      "activityBar.activeBackground": "#00000000",
+      "list.inactiveSelectionBackground": "#272a35",
+      "list.hoverBackground": "#272a35",
+      "widget.border": "#3b4252",
+      "quickInput.background": "#20222e",
+      "quickInputList.focusBackground": "#2b2f40",
+      "quickInputList.focusForeground": "#88c0d0",
+      "editorGroup.border": "#3b4252",
+      "input.background": "#2b2f40",
+      "editorOverviewRuler.border": "#272a35"
+    }
+  },
 
   // ---
 }
