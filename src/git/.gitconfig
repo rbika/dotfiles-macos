@@ -19,17 +19,18 @@
     branch = auto
 
 [pretty]
-    pretty-format-1 = %C(green)%h %C(auto)%d %C(reset)%s %C(reset)
-    pretty-format-2 = %C(green)%h %C(auto)%d %C(reset)%s %C(blue)%an %C(reset)
+    pretty-format-1 = %C(green)%h%C(auto)%d %C(reset)%s %C(reset)
+    pretty-format-2 = %C(green)%h%C(auto)%d %C(reset)%s %C(blue)%an %C(reset)
 
 [alias]
     s = status --branch
     b = branch --verbose
     d = diff
-    p = pull
+    p = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
     m = merge
     c = commit
     f = fetch -p
+    ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
     co = checkout
     rb = rebase
     ch = cherry-pick
