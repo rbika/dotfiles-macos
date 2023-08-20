@@ -67,7 +67,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - Set key repeat to "Fast"
 - Set delay until repeat to "Short"
-- In Modifier Keys set Caps Lock to Control
 - Shortcuts → Mission Control
   - Show Desktop: Option+D
   - Move left a space: Option+1
@@ -98,10 +97,10 @@ Custom app icons can be found inside `/src/app-icons`.
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
-- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Brazilian Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
+- [Nord Theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
+- [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
 
 ### iTerm2
 
