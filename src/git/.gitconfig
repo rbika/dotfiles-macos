@@ -30,7 +30,6 @@
     m = merge
     c = commit
     f = fetch -p
-    ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
     co = checkout
     rb = rebase
     ch = cherry-pick
