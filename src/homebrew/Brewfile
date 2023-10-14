@@ -8,7 +8,6 @@ brew "neovim"
 
 # Browsers
 cask "google-chrome"
-cask "brave-browser"
 
 # Dev
 cask "iterm2"
