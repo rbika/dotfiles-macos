@@ -6,7 +6,7 @@
 
 source ~/.git-prompt.sh
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%~%f%F{black}$(__git_ps1 " (%s)")%f '
+PROMPT='%F{blue}➔%f %F{blue}%~%f%F{black}$(__git_ps1 " (%s)")%f '
 RPROMPT='%F{black}%*%f'
 
 # -----------------------------------------------
