@@ -1,95 +1,66 @@
 [
+  // Editor
+  // ------
   {
-    "key": "cmd+t",
-    "command": "workbench.action.terminal.toggleTerminal"
+    "key": "ctrl+cmd+.",
+    "command": "workbench.action.focusNextGroup",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+j",
-    "command": "cursorDown",
-    "when": "textInputFocus"
+    "key": "ctrl+cmd+,",
+    "command": "workbench.action.focusPreviousGroup",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+k",
-    "command": "cursorUp",
-    "when": "textInputFocus"
+    "key": "ctrl+.",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+h",
-    "command": "cursorLeft",
-    "when": "textInputFocus"
+    "key": "ctrl+,",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+l",
-    "command": "cursorRight",
-    "when": "textInputFocus"
+    "key": "ctrl+shift+o",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
   },
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+
+  // Terminal
+  // --------
   {
     "key": "ctrl+cmd+m",
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+j",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+j",
+    "key": "ctrl+.",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+,",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
   {
-    "key": "ctrl+u",
-    "command": "cursorMove",
-    "args": {
-      "to": "up",
-      "by": "line",
-      "value": 10
-    },
-    "when": "editorTextFocus"
+    "key": "ctrl+i",
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+d",
-    "command": "cursorMove",
-    "args": {
-      "to": "down",
-      "by": "line",
-      "value": 10
-    },
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "cursorWordEndRight",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "cursorWordStartRight"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "cursorWordLeft",
-    "when": "textInputFocus"
-  },
+    "key": "ctrl+cmd+i",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  }
 ]

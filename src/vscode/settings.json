@@ -11,9 +11,7 @@
   // Editor
   "editor.minimap.renderCharacters": false,
   "editor.detectIndentation": true,
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "editor.snippetSuggestions": "top",
   "editor.wordBasedSuggestions": false,
   "editor.smoothScrolling": true,
@@ -99,7 +97,5 @@
       "input.background": "#2b2f40",
       "editorOverviewRuler.border": "#272a35"
     }
-  },
-
-  // ---
+  }
 }
