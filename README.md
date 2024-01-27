@@ -1,7 +1,7 @@
 # Development Environment Setup (macOS)
 
 Steps to set up a new macOS machine  
-Updated for macOS Ventura
+Updated for macOS Sonoma
 
 ## SSH key
 
@@ -34,7 +34,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - Clone this repo:
 
   ```
-  git clone git@github.com:rbika/dotfiles-macos.git
+  git clone git@github.com:rbika/dotfiles-macos.git dotfiles
   ```
 
 - Change directory
