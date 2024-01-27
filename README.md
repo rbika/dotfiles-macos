@@ -54,7 +54,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ### Hot Corners Shortcuts
 
-
 - Top Right: Mission Control
 - Bottom Right: Application Window
 - Bottom Left: Desktop
@@ -86,6 +85,14 @@ brew bundle --file=./src/homebrew/Brewfile
 See the `Brewbundle` file for the list of apps.
 
 Custom app icons can be found inside `/src/app-icons`.
+
+### Finder
+
+Delete all `.DS_Store` files so when setting view options, they are applied to all folders:
+
+```
+cd ~ && find . -name '.DS_Store' -type f -delete
+```
 
 ### VS Code
 
