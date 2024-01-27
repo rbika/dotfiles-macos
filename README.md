@@ -52,23 +52,19 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ## System preferences
 
-### Mission Control
+### Hot Corners Shortcuts
 
-- Hot Corners
-  - Top Right: Mission Control
-  - Bottom Right: Application Window
-  - Bottom Left: Desktop
 
-### Sounds
-
-- Set alert sound to "Bubble"
+- Top Right: Mission Control
+- Bottom Right: Application Window
+- Bottom Left: Desktop
 
 ### Keyboard
 
 - Set key repeat to "Fast"
 - Set delay until repeat to "Short"
+- Shortcuts → Show Desktop: Option+D
 - Shortcuts → Mission Control
-  - Show Desktop: Option+D
   - Move left a space: Option+1
   - Move right a space: Option+2
 
@@ -84,7 +80,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 Apps can be installed running:
 
 ```
-brew bundle
+brew bundle --file=./src/homebrew/Brewfile
 ```
 
 See the `Brewbundle` file for the list of apps.
