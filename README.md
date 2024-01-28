@@ -5,7 +5,7 @@ Updated for macOS Sonoma
 
 ## SSH key
 
-Generate a SSH key
+Generate an SSH key
 
 ```
 ssh-keygen -t ed25519 -C "rbmbika@gmail.com"
@@ -108,8 +108,16 @@ cd ~ && find . -name '.DS_Store' -type f -delete
 ### iTerm2
 
 - Download and install the [Nord Dark](https://github.com/rbika/iterm2-nord-dark) iTerm2 theme.
-- Copy the `auto_dark_mode.py` script the iTerm's folder:
+- Copy the `auto_dark_mode.py` script to the iTerm's folder:
 
   ```
   cp -p ./src/iterm2/auto_dark_mode.py ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch
+  ```
+
+### Karabiner Elements
+
+- Remap Capslock to Left Control
+- Copy complex modifications to Karabiner's folder:
+  ```
+  cp ./src/karabiner/* ~/.config/karabiner/assets/complex_modifications/
   ```
