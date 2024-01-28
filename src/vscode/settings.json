@@ -13,7 +13,7 @@
   "editor.detectIndentation": true,
   "editor.rulers": [100],
   "editor.snippetSuggestions": "top",
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",

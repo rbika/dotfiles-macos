@@ -22,9 +22,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - [Homebrew](https://brew.sh/) - Package manager for macOS
 - [nvm](https://github.com/creationix/nvm#installation-and-update) - Node Version Manager
-
 - Download git-prompt script:
-
   ```
   curl -fsSo ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
   ```
@@ -62,10 +60,11 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - Set key repeat to "Fast"
 - Set delay until repeat to "Short"
-- Shortcuts → Show Desktop: Option+D
-- Shortcuts → Mission Control
-  - Move left a space: Option+1
-  - Move right a space: Option+2
+- Shortcuts
+  - Show Desktop: Option+D
+  - Mission Control
+    - Move left a space: Option+1
+    - Move right a space: Option+2
 
 ### Extra configs
 
@@ -82,7 +81,7 @@ Apps can be installed running:
 brew bundle --file=./src/homebrew/Brewfile
 ```
 
-See the `Brewbundle` file for the list of apps.
+See the `src/homebrew/Brewfile` for the list of apps.
 
 Custom app icons can be found inside `/src/app-icons`.
 
@@ -96,14 +95,20 @@ cd ~ && find . -name '.DS_Store' -type f -delete
 
 ### VS Code
 
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [Brazilian Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
-- [Nord Theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
-- [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
+- Install essential extensions:
+  - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
+  - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+  - [Brazilian Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
+  - [Nord Theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
+  - [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
+- Create symlinks for the configuration files:
+  ```
+  ln -s $(pwd)/src/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+  ln -s $(pwd)/src/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+  ```
 
 ### iTerm2
 
