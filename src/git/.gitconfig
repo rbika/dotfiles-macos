@@ -33,6 +33,7 @@
     co = checkout
     rb = rebase
     ch = cherry-pick
+    cm = commit -m
     wip = commit --no-verify -m "WIP"
     uncommit = reset HEAD^
     unstage = reset HEAD
