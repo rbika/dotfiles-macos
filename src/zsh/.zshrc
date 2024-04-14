@@ -7,7 +7,6 @@
 source ~/.git-prompt.sh
 setopt PROMPT_SUBST
 PROMPT='%F{blue}➔%f %F{blue}%~%f%F{black}$(__git_ps1 " (%s)")%f '
-RPROMPT='%F{black}%*%f'
 
 # -----------------------------------------------
 # Completion
@@ -70,6 +69,7 @@ alias mk="mkdir -p"
 alias path="echo -e $PATH | tr ':' '\n'"
 alias grep="grep -n --color=auto"
 alias gitg='fork'
+alias hist="history -E"
 alias vim='nvim'
 
 # -----------------------------------------------
