@@ -44,6 +44,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - Create symlinks:
   ```
   ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
+  ln -s $(pwd)/src/zsh/.hushlogin ~/.hushlogin
   ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
   ln -s $(pwd)/src/nvim ~/.config
   ```
