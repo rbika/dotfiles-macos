@@ -22,19 +22,34 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+o",
-    "command": "editor.action.smartSelect.expand",
+    "key": "alt+up",
+    "command": "cursorMove",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 5
+    },
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+i",
+    "key": "alt+down",
+    "command": "cursorMove",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 5
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+,",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+u",
-    "command": "editor.action.revealDefinition",
-    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    "key": "ctrl+shift+.",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
   },
   {
     "key": "shift+alt+down",
