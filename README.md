@@ -1,7 +1,7 @@
 # Development Environment Setup (macOS)
 
 Steps to set up a new macOS machine  
-Updated for macOS Sonoma
+Updated for macOS Sequoia
 
 ## SSH key
 
@@ -25,53 +25,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - Download git-prompt script:
   ```
   curl -fsSo ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-  ```
-
-## Config files
-
-- Clone this repo:
-
-  ```
-  git clone git@github.com:rbika/dotfiles-macos.git dotfiles
-  ```
-
-- Change directory
-
-  ```
-  cd dotfiles
-  ```
-
-- Create symlinks:
-  ```
-  ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
-  ln -s $(pwd)/src/zsh/.hushlogin ~/.hushlogin
-  ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
-  ln -s $(pwd)/src/nvim ~/.config
-  ```
-
-## System preferences
-
-### Hot Corners Shortcuts
-
-- Top Right: Mission Control
-- Bottom Right: Application Window
-- Bottom Left: Desktop
-
-### Keyboard
-
-- Set key repeat to "Fast"
-- Set delay until repeat to "Short"
-- Shortcuts
-  - Show Desktop: Option+D
-  - Mission Control
-    - Move left a space: Option+1
-    - Move right a space: Option+2
-
-### Extra configs
-
-- Disable font smoothing:
-  ```
-  defaults -currentHost write -g AppleFontSmoothing -int 0
   ```
 
 ## Apps
@@ -122,8 +75,54 @@ cd ~ && find . -name '.DS_Store' -type f -delete
 
 ### Karabiner Elements
 
-- Remap Capslock to Left Control
-- Copy complex modifications to Karabiner's folder:
+- Copy config file to Karabiner's folder:
   ```
-  cp ./src/karabiner/* ~/.config/karabiner/assets/complex_modifications/
+  cp ./src/karabiner/karabiner.json ~/.config/karabiner/
+  ```
+
+## Config files
+
+- Clone this repo:
+
+  ```
+  git clone git@github.com:rbika/dotfiles-macos.git dotfiles
+  ```
+
+- Change directory
+
+  ```
+  cd dotfiles
+  ```
+
+- Create symlinks:
+  ```
+  ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
+  ln -s $(pwd)/src/zsh/.hushlogin ~/.hushlogin
+  ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
+  ln -s $(pwd)/src/nvim ~/.config/nvim
+  ```
+
+## System preferences
+
+### Hot Corners Shortcuts
+
+- Top Right: Mission Control
+- Bottom Right: Application Window
+- Bottom Left: Desktop
+
+### Keyboard
+
+- Set key repeat to "Fast"
+- Set delay until repeat to "Short"
+- Shortcuts
+  - Show Desktop: Option+D
+  - Mission Control
+    - Move left a space: Option+1
+    - Move right a space: Option+2
+
+### Extra configs
+
+- Disable font smoothing:
+  ```
+  defaults -currentHost write -g AppleFontSmoothing -int 0
   ```
