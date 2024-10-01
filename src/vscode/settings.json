@@ -9,6 +9,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "top",
   "workbench.startupEditor": "none",
+  "workbench.tree.indent": 12,
 
   // Editor
   "editor.minimap.renderCharacters": false,
@@ -37,12 +38,12 @@
   "json.format.keepLines": true,
 
   // SCM
-
   "scm.inputFontSize": 12,
   "scm.showActionButton": false,
 
   // Material Icon (Plugin)
   "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.activeIconPack": "none",
 
   // cSpell (Plugin)
   "cSpell.language": "en,pt,pt_BR",
