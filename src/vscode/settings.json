@@ -8,6 +8,7 @@
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "top",
+  "workbench.startupEditor": "none",
 
   // Editor
   "editor.minimap.renderCharacters": false,
@@ -18,10 +19,11 @@
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
 
   // Integrated Terminal
   "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, Monaco, Hack Nerd Font",
-  "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
 
@@ -34,18 +36,13 @@
   // JSON
   "json.format.keepLines": true,
 
+  // SCM
+
+  "scm.inputFontSize": 12,
+  "scm.showActionButton": false,
+
   // Material Icon (Plugin)
   "material-icon-theme.folders.theme": "classic",
-
-  // GitLens (Plugin)
-  "gitlens.hovers.avatarSize": 24,
-  "gitlens.views.commits.avatars": false,
-  "gitlens.graph.showDetailsView": false,
-  "gitlens.graph.showGhostRefsOnRowHover": false,
-  "gitlens.graph.dimMergeCommits": true,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.currentLine.enabled": false,
 
   // cSpell (Plugin)
   "cSpell.language": "en,pt,pt_BR",
