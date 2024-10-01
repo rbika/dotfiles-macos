@@ -31,7 +31,7 @@ opt.wrap = false -- long lines do not wrap and continue on the next line
 
 local cmd = vim.cmd
 
-cmd 'colorscheme codedark'
+cmd 'colorscheme nord'
 
 -- Keymaps
 -- -------
