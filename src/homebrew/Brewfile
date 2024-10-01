@@ -6,6 +6,9 @@ brew "neovim"
 # brew install --cask
 # -------------------
 
+# Fonts
+cask "font-jetbrains-mono"
+
 # Browsers
 cask "google-chrome"
 cask "brave-browser"
@@ -14,17 +17,24 @@ cask "brave-browser"
 cask "iterm2"
 cask "visual-studio-code"
 cask "fork"
+cask "figma"
 
 # Chat
 cask "telegram-desktop"
 cask "whatsapp"
 
-# Utilities
-cask "appcleaner"
+# Productivity
 cask "rectangle"
-cask "iina"
-cask "notion"
-cask "figma"
-cask "spotify"
 cask "raycast"
 cask "karabiner-elements"
+
+# Notes
+cask "craft"
+
+# Music
+cask "spotify"
+
+# Utilities
+cask "appcleaner"
+cask "keepingyouawake"
+cask "iina"
