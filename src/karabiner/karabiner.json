@@ -1,16 +1,28 @@
 {
+  "global": { "show_in_menu_bar": false },
   "profiles": [
     {
-      "name": "Default profile",
-      "selected": true,
-      "simple_modifications": [
-        {
-          "from": { "key_code": "caps_lock" },
-          "to": [{ "key_code": "left_control" }]
-        }
-      ],
       "complex_modifications": {
         "rules": [
+          {
+            "description": "Fix Cmd + backspace",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": ["left_control", "left_command"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": "left_command"
+                },
+                "type": "basic"
+              }
+            ]
+          },
           {
             "description": "Maps Option + o to option + e",
             "manipulators": [
@@ -129,7 +141,15 @@
             ]
           }
         ]
-      }
+      },
+      "name": "Default profile",
+      "selected": true,
+      "simple_modifications": [
+        {
+          "from": { "key_code": "caps_lock" },
+          "to": [{ "key_code": "left_control" }]
+        }
+      ]
     }
   ]
 }
