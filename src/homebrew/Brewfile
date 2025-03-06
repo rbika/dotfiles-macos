@@ -18,13 +18,13 @@ cask "iterm2"
 cask "visual-studio-code"
 cask "fork"
 cask "figma"
+cask "drawio"
 
 # Chat
-cask "telegram-desktop"
 cask "whatsapp"
 
 # Productivity
-cask "rectangle"
+cask "loop"
 cask "raycast"
 cask "karabiner-elements"
 
@@ -38,3 +38,4 @@ cask "spotify"
 cask "appcleaner"
 cask "keepingyouawake"
 cask "iina"
+cask "chatgpt"

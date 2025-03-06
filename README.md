@@ -12,7 +12,7 @@ ssh-keygen -t ed25519 -C "rbmbika@gmail.com"
 ssh-add ~/.ssh/id_ed25519
 ```
 
-To copy the public key to your clipboard run
+Add the key to your Github account. To copy the public key to your clipboard run:
 
 ```
 pbcopy < ~/.ssh/id_ed25519.pub
@@ -25,6 +25,28 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - Download git-prompt script:
   ```
   curl -fsSo ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+  ```
+
+## Config files
+
+- Clone this repo:
+
+  ```
+  git clone git@github.com:rbika/dotfiles-macos.git dotfiles
+  ```
+
+- Change directory
+
+  ```
+  cd dotfiles
+  ```
+
+- Create symlinks:
+  ```
+  ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
+  ln -s $(pwd)/src/zsh/.hushlogin ~/.hushlogin
+  ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
+  mkdir ~/.config && ln -s $(pwd)/src/nvim ~/.config/nvim
   ```
 
 ## Apps
@@ -78,28 +100,6 @@ cd ~ && find . -name '.DS_Store' -type f -delete
 - Copy config file to Karabiner's folder:
   ```
   cp ./src/karabiner/karabiner.json ~/.config/karabiner/
-  ```
-
-## Config files
-
-- Clone this repo:
-
-  ```
-  git clone git@github.com:rbika/dotfiles-macos.git dotfiles
-  ```
-
-- Change directory
-
-  ```
-  cd dotfiles
-  ```
-
-- Create symlinks:
-  ```
-  ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
-  ln -s $(pwd)/src/zsh/.hushlogin ~/.hushlogin
-  ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
-  ln -s $(pwd)/src/nvim ~/.config/nvim
   ```
 
 ## System preferences
