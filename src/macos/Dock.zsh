@@ -13,7 +13,10 @@ defaults write com.apple.dock mineffect -string "scale"
 defaults write com.apple.dock minimize-to-application -bool true
 
 # Do not reorder Spaces based on most recent use
-defaults write com.apple.dock "mru-spaces" -bool false
+defaults write com.apple.dock mru-spaces -bool false
+
+# Don't enter Mission Control when dragging windows to the top of screen
+defaults write com.apple.dock enterMissionControlByTopWindowDrag -int 0
 
 # Dock hot corners
 # 
