@@ -24,7 +24,6 @@ cask "drawio"
 cask "whatsapp"
 
 # Productivity
-cask "loop"
 cask "raycast"
 cask "karabiner-elements"
 

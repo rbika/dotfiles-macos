@@ -3,7 +3,6 @@
   "window.autoDetectColorScheme": true,
 
   // Workbench
-  "workbench.colorTheme": "Nord",
   "workbench.preferredDarkColorTheme": "Nord",
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.iconTheme": "material-icon-theme",
