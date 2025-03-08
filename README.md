@@ -89,11 +89,6 @@ cd ~ && find . -name '.DS_Store' -type f -delete
 ### iTerm2
 
 - Download and install the [Nord Dark](https://github.com/rbika/iterm2-nord-dark) iTerm2 theme.
-- Copy the `auto_dark_mode.py` script to the iTerm's folder:
-
-  ```
-  cp -p ./src/iterm2/auto_dark_mode.py ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch
-  ```
 
 ### Karabiner Elements
 
