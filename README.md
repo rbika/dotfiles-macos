@@ -99,16 +99,12 @@ cd ~ && find . -name '.DS_Store' -type f -delete
 
 ## System preferences
 
-### Hot Corners Shortcuts
-
-- Top Right: Mission Control
-- Bottom Right: Application Window
-- Bottom Left: Desktop
+```
+source ./src/macos/defaults.zsh
+```
 
 ### Keyboard
 
-- Set key repeat to "Fast"
-- Set delay until repeat to "Short"
 - Shortcuts
   - Show Desktop: Option+D
   - Mission Control
