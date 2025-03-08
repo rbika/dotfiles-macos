@@ -45,6 +45,26 @@
             ]
           },
           {
+            "description": "Maps Ctrl + o to Esc",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                    "mandatory": ["left_control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "escape"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Maps Left Ctrl + a/s/d to ⇧/⌥/⌘",
             "manipulators": [
               {
