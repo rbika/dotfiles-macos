@@ -59,7 +59,27 @@ brew bundle --file=./src/homebrew/Brewfile
 
 See the `src/homebrew/Brewfile` for the list of apps.
 
+Wipe all apps from the Dock:
+
+```
+defaults write com.apple.dock persistent-apps -array
+```
+
 Custom app icons can be found inside `/src/app-icons`.
+
+### Karabiner Elements
+
+- Copy config file to Karabiner's folder:
+  ```
+  cp ./src/karabiner/karabiner.json ~/.config/karabiner/
+  ```
+
+### iTerm2
+
+- Copy config file:
+  ```
+  cp ./src/iterm2/iterm2.plist ~/.config/iterm2/
+  ```
 
 ### Finder
 
@@ -69,33 +89,9 @@ Delete all `.DS_Store` files so when setting view options, they are applied to a
 cd ~ && find . -name '.DS_Store' -type f -delete
 ```
 
-### VS Code
-
-- Install essential extensions:
-  - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-  - [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
-  - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-  - [Brazilian Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
-  - [Nord Theme](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
-  - [Pretty TypeScript Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
-- Create symlinks for the configuration files:
-  ```
-  ln -s $(pwd)/src/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-  ln -s $(pwd)/src/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-  ```
-
 ### iTerm2
 
 - Download and install the [Nord Dark](https://github.com/rbika/iterm2-nord-dark) iTerm2 theme.
-
-### Karabiner Elements
-
-- Copy config file to Karabiner's folder:
-  ```
-  cp ./src/karabiner/karabiner.json ~/.config/karabiner/
-  ```
 
 ## System preferences
 
@@ -103,13 +99,19 @@ cd ~ && find . -name '.DS_Store' -type f -delete
 source ./src/macos/defaults.zsh
 ```
 
+### General - Language and Region
+
+- Number Format: 1,234,567.89
+
 ### Keyboard
 
-- Shortcuts
-  - Show Desktop: Option+D
+- Shortcut
   - Mission Control
+    - Show Desktop: Option+D
     - Move left a space: Option+1
     - Move right a space: Option+2
+  - Spotlight
+    - Show Spotlight Search: Disable it
 
 ### Extra configs
 
