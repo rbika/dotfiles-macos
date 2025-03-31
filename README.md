@@ -71,7 +71,7 @@ Custom app icons can be found inside `/src/app-icons`.
 
 - Copy config file to Karabiner's folder:
   ```
-  cp ./src/karabiner/karabiner.json ~/.config/karabiner/
+  mkdir -p ~/.config/karabiner/ && cp ./src/karabiner/karabiner.json ~/.config/karabiner/
   ```
 
 ### iTerm2
