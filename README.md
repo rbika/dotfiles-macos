@@ -1,7 +1,7 @@
 # Development Environment Setup (macOS)
 
-Steps to set up a new macOS machine  
-Updated for macOS Sequoia
+Steps to set up a new macOS machine.  
+Updated for macOS Sequoia.
 
 ## SSH key
 
@@ -62,7 +62,7 @@ See the `src/homebrew/Brewfile` for the list of apps.
 Wipe all apps from the Dock:
 
 ```
-defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-apps -array && killall Dock
 ```
 
 Custom app icons can be found inside `/src/app-icons`.
