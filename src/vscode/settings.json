@@ -4,7 +4,6 @@
 
   // Workbench
   "workbench.preferredDarkColorTheme": "Nord",
-  "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.activityBar.location": "top",
   "workbench.startupEditor": "none",
@@ -73,7 +72,7 @@
       "titleBar.activeBackground": "#181a21",
       "titleBar.inactiveBackground": "#181a21",
       "editorHoverWidget.background": "#181a21",
-      "editor.wordHighlightBackground": "#32374b",
+      "editor.wordHighlightBackground": "#32374b50",
       "sideBarSectionHeader.background": "#181a21",
       "sideBarSectionHeader.border": "#3b4252",
       "titleBar.border": "#3b4252",
