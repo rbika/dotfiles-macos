@@ -61,6 +61,11 @@
     "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
+  {
+    "key": "ctrl+alt+backspace",
+    "command": "-deleteWordPartLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
 
   // Terminal
   // --------
@@ -87,10 +92,5 @@
     "key": "ctrl+cmd+i",
     "command": "workbench.action.terminal.new",
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  },
-  {
-    "key": "ctrl+alt+backspace",
-    "command": "-deleteWordPartLeft",
-    "when": "textInputFocus && !editorReadonly"
   }
 ]
