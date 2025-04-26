@@ -5,7 +5,7 @@ Updated for macOS Sequoia.
 
 ## SSH key
 
-Generate an SSH key
+Generate an SSH key:
 
 ```
 ssh-keygen -t ed25519 -C "rbmbika@gmail.com"
@@ -42,11 +42,15 @@ pbcopy < ~/.ssh/id_ed25519.pub
   ```
 
 - Create symlinks:
+
   ```
   ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
   ln -s $(pwd)/src/zsh/.hushlogin ~/.hushlogin
   ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
-  mkdir ~/.config && ln -s $(pwd)/src/nvim ~/.config/nvim
+
+  mkdir ~/.config
+  ln -s $(pwd)/src/nvim ~/.config/nvim
+  ln -s $(pwd)/src/ghostty ~/.config/ghostty
   ```
 
 ## Apps
