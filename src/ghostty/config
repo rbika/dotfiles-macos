@@ -1,0 +1,16 @@
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+font-size = 12
+theme = nord-dark
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+split-divider-color = #8c8f99
+window-padding-x = 8
+window-height = 32
+window-width = 110
+copy-on-select = false
