@@ -15,7 +15,9 @@ cask "brave-browser"
 
 # Dev
 cask "iterm2"
+cask "ghostty"
 cask "visual-studio-code"
+cask "cursor"
 cask "fork"
 cask "figma"
 cask "drawio"
@@ -29,6 +31,7 @@ cask "karabiner-elements"
 
 # Notes
 cask "craft"
+cask "notion"
 
 # Music
 cask "spotify"
