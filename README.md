@@ -32,13 +32,8 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - Clone this repo:
 
   ```
-  git clone git@github.com:rbika/dotfiles-macos.git dotfiles
-  ```
-
-- Change directory
-
-  ```
-  cd dotfiles
+  cd && mkdir Dev && cd Dev
+  git clone git@github.com:rbika/dotfiles-macos.git dotfiles && cd dotfiles
   ```
 
 - Create symlinks:
