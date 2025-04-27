@@ -73,14 +73,6 @@ Custom app icons can be found inside `/src/app-icons`.
   mkdir -p ~/.config/karabiner/ && cp ./src/karabiner/karabiner.json ~/.config/karabiner/
   ```
 
-### iTerm2
-
-- Copy config file:
-  ```
-  cp ./src/iterm2/iterm2.plist ~/.config/iterm2/
-  ```
-- Download and install the [Nord Dark](https://github.com/rbika/iterm2-nord-dark) iTerm2 theme.
-
 ### Finder
 
 Delete all `.DS_Store` files so when setting view options, they are applied to all folders:
