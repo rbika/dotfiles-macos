@@ -14,13 +14,12 @@ cask "google-chrome"
 cask "brave-browser"
 
 # Dev
-cask "iterm2"
 cask "ghostty"
 cask "visual-studio-code"
 cask "cursor"
 cask "fork"
 cask "figma"
-cask "drawio"
+# cask "drawio"
 
 # Chat
 cask "whatsapp"
