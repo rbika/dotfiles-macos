@@ -39,6 +39,7 @@
   "scm.inputFontSize": 12,
   "scm.showActionButton": false,
   "scm.defaultViewMode": "tree",
+  "scm.graph.badges": "all",
 
   // Git
   "git.autofetch": true,
