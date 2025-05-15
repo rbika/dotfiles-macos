@@ -18,7 +18,6 @@
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 100,
 
   // Integrated Terminal
@@ -28,6 +27,7 @@
 
   // Diff Editor
   "diffEditor.renderSideBySide": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
 
   // Explorer
   "explorer.compactFolders": false,
@@ -38,6 +38,10 @@
   // SCM
   "scm.inputFontSize": 12,
   "scm.showActionButton": false,
+  "scm.defaultViewMode": "tree",
+
+  // Git
+  "git.autofetch": true,
 
   // Material Icon (Plugin)
   "material-icon-theme.folders.theme": "classic",
