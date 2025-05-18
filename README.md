@@ -66,12 +66,26 @@ defaults write com.apple.dock persistent-apps -array && killall Dock
 
 Custom app icons can be found inside `/src/app-icons`.
 
+### Cursor
+
+Install extensions:
+
+```
+cursor --install-extension arcticicestudio.nord-visual-studio-code
+cursor --install-extension bradlc.vscode-tailwindcss
+cursor --install-extension dbaeumer.vscode-eslint
+cursor --install-extension esbenp.prettier-vscode
+cursor --install-extension pkief.material-icon-theme
+cursor --install-extension streetsidesoftware.code-spell-checker
+```
+
 ### Karabiner Elements
 
-- Copy config file to Karabiner's folder:
-  ```
-  mkdir -p ~/.config/karabiner/ && cp ./src/karabiner/karabiner.json ~/.config/karabiner/
-  ```
+Copy config file to Karabiner's folder:
+
+```
+mkdir -p ~/.config/karabiner/ && cp ./src/karabiner/karabiner.json ~/.config/karabiner/
+```
 
 ### Finder
 
