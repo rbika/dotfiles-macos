@@ -21,7 +21,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 ## Terminal tools
 
 - [Homebrew](https://brew.sh/) - Package manager for macOS
-- [nvm](https://github.com/creationix/nvm#installation-and-update) - Node Version Manager
+- [Node.js](https://nodejs.org/en/download) - Nodejs with nvm
 - Download git-prompt script:
   ```
   curl -fsSo ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
