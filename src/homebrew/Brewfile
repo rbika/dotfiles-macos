@@ -2,6 +2,9 @@
 # ------------
 
 brew "neovim"
+brew "ni"
+brew "stats"
+brew "mas"
 
 # brew install --cask
 # -------------------
@@ -15,14 +18,9 @@ cask "brave-browser"
 
 # Dev
 cask "ghostty"
-cask "visual-studio-code"
 cask "cursor"
 cask "fork"
 cask "figma"
-# cask "drawio"
-
-# Chat
-cask "whatsapp"
 
 # Productivity
 cask "raycast"
@@ -32,11 +30,21 @@ cask "karabiner-elements"
 cask "craft"
 cask "notion"
 
-# Music
-cask "spotify"
-
 # Utilities
 cask "appcleaner"
 cask "keepingyouawake"
-cask "iina"
+cask "pearcleaner"
+
+# Misc
 cask "chatgpt"
+cask "iina"
+cask "spotify"
+cask "whatsapp"
+cask "notion-mail"
+cask "raindropio"
+
+# mas install
+# -----------
+
+mas "News Explorer", id: 1032670789
+mas "Tomito", id: 1526042938
