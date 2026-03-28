@@ -1,6 +1,6 @@
 [user]
-    name = Rafael Bicalho
-    email = rbmbika@gmail.com
+	name = Rafael Bicalho
+	email = rbmbika@gmail.com
     # Run "git config user.email <new-email>" inside a project to override the email config
 
 [init]
@@ -19,13 +19,14 @@
     branch = auto
 
 [pretty]
-    detailed = %C(green)%h%C(auto)%d %C(reset)%s %C(reset)
+    detailed = %C(green)%h%C(auto)%d %C(reset)%s %C(reset)%C(green)(%cr) %C(reset)%C(blue)%an %C(reset)
     no-branch-names = %C(green)%h %C(reset)%s %C(blue)%an %C(reset)
 
 [alias]
-    s = status --branch
+    s = status
     b = branch --verbose
     d = diff
+    a = add .
     p = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
     m = merge
     c = commit
@@ -36,11 +37,13 @@
     cm = commit -m
     pr = !"open $(git repo-url)/pull/new/$(git branch --show-current)"
     wip = commit --no-verify -m "WIP"
-    amend = commit --amend --reuse-message=HEAD
+    amend = commit --amend --no-edit
     unstage = reset HEAD
     uncommit = reset HEAD^
     open = !"open $(git repo-url)"
-    compare = log --oneline --no-merges --pretty=no-branch-name # git compare target-branch..source-branch
+    # git compare source-branch..target-branch
+    # shows commits from source-branch to target-branch
+    compare = log --no-merges --pretty=no-branch-name
     alias = config --get-regexp alias
 
     l = log --graph --pretty=detailed --decorate-refs-exclude="tags/*" -5
