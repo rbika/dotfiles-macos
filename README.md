@@ -107,9 +107,9 @@ source ./src/macos/defaults.zsh
 
 ### Keyboard
 
-- Shortcut
+- Keyboard Shortcuts
+- Show Desktop: Option+D
   - Mission Control
-    - Show Desktop: Option+D
     - Move left a space: Option+1
     - Move right a space: Option+2
   - Spotlight
