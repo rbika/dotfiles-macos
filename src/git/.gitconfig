@@ -31,6 +31,7 @@
     m = merge
     c = commit
     f = fetch -p
+    g = !"gitg"
     co = checkout
     rb = rebase
     ch = cherry-pick
