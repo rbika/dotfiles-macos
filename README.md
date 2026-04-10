@@ -1,20 +1,20 @@
 # Development Environment Setup (macOS)
 
 Steps to set up a new macOS machine.  
-Updated for macOS Sequoia.
+Updated for macOS Tahoe.
 
 ## SSH key
 
 Generate an SSH key:
 
-```
+```zsh
 ssh-keygen -t ed25519 -C "rbmbika@gmail.com"
 ssh-add ~/.ssh/id_ed25519
 ```
 
 Add the key to your Github account. To copy the public key to your clipboard run:
 
-```
+```zsh
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
@@ -31,14 +31,14 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - Clone this repo:
 
-  ```
+  ```zsh
   cd && mkdir Dev && cd Dev
   git clone git@github.com:rbika/dotfiles-macos.git dotfiles && cd dotfiles
   ```
 
 - Create symlinks:
 
-  ```
+  ```zsh
   ln -s $(pwd)/src/zsh/.zshrc ~/.zshrc
   ln -s $(pwd)/src/zsh/.hushlogin ~/.hushlogin
   ln -s $(pwd)/src/git/.gitconfig ~/.gitconfig
@@ -52,21 +52,25 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 Apps can be installed running:
 
-```
+```zsh
 brew bundle --file=./src/homebrew/Brewfile
 ```
 
-See the `src/homebrew/Brewfile` for the list of apps.
-
-Wipe all apps from the Dock:
-
-```
-defaults write com.apple.dock persistent-apps -array && killall Dock
-```
-
+See the `src/homebrew/Brewfile` for the list of apps.  
 Custom app icons can be found inside `/src/app-icons`.
 
+### Raycast
+
+Go to Settings → Advanced → Import/Export and import `Raycast.rayconfig`.
+
 ### Cursor
+
+Create symlink for settings and keybindings:
+
+```zsh
+ln -s $(pwd)/src/cursor/settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+ln -s $(pwd)/src/cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
+```
 
 Install extensions:
 
@@ -77,6 +81,7 @@ cursor --install-extension dbaeumer.vscode-eslint
 cursor --install-extension esbenp.prettier-vscode
 cursor --install-extension pkief.material-icon-theme
 cursor --install-extension streetsidesoftware.code-spell-checker
+cursor --install-extension yoavbls.pretty-ts-errors
 ```
 
 ### Karabiner Elements
@@ -114,10 +119,3 @@ source ./src/macos/defaults.zsh
     - Move right a space: Option+2
   - Spotlight
     - Show Spotlight Search: Disable it
-
-### Extra configs
-
-- Disable font smoothing:
-  ```
-  defaults -currentHost write -g AppleFontSmoothing -int 0
-  ```
