@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+# Disable font smoothing
+defaults -currentHost write -g AppleFontSmoothing -int 0
+
 # Disable wallpaper tinting in windows
 defaults write -g AppleReduceDesktopTinting -bool yes
 

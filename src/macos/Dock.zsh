@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+# Wipe all apps from the Dock:
+defaults write com.apple.dock persistent-apps -array
+
 # Set the icon size of Dock items
 defaults write com.apple.dock tilesize -int 48
 
