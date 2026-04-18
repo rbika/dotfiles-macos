@@ -56,7 +56,18 @@ Apps can be installed running:
 brew bundle --file=./src/homebrew/Brewfile
 ```
 
-See the `src/homebrew/Brewfile` for the list of apps.  
+See the `src/homebrew/Brewfile` for the list of apps.
+
+Install apps from App Store:
+
+```zsh
+# ReadKit
+mas install 1615798039
+
+# Tomito
+mas install 1526042938
+```
+
 Custom app icons can be found inside `/src/app-icons`.
 
 ### Raycast
@@ -109,6 +120,11 @@ source ./src/macos/defaults.zsh
 ### General - Language and Region
 
 - Number Format: 1,234,567.89
+
+### Appearance
+
+- Liquid Glass: Tinted
+- Icon and widget style: Dark
 
 ### Keyboard
 
