@@ -4,7 +4,9 @@
 # 
 # defaults help → Prints the help
 # defaults domains → Lists all domains
+# defaults read → Lists all defaults
 # defaults find ${word} → Lists all entries containing word
+# defaults delete ${domain} ${key} → Deletes the key from the domain
 
 SCRIPT_PATH=$(dirname "$0")
 

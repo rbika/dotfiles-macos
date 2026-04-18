@@ -21,6 +21,9 @@ defaults write com.apple.dock mru-spaces -bool false
 # Don't enter Mission Control when dragging windows to the top of screen
 defaults write com.apple.dock enterMissionControlByTopWindowDrag -int 0
 
+# Group windows by application in Expose
+defaults write com.apple.dock "expose-group-apps" -bool true
+
 # Dock hot corners
 # 
 #  0: no-op

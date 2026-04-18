@@ -8,3 +8,9 @@ defaults write -g AppleReduceDesktopTinting -bool yes
 
 # Show scroll bars only when scrolling
 defaults write NSGlobalDomain AppleShowScrollBars -string WhenScrolling
+
+# Enable zoom keyboard shortcuts
+defaults write com.apple.universalaccess closeViewHotkeysEnabled -bool true
+
+# Enable scroll gesture with modifier key
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
